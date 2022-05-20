@@ -39,7 +39,7 @@ def modular_reduction(InputPolynomial, ReducingPolynomial):
         
         # adding 0's on the right side of the reducing polynomial until the polynomials have the same most-significant-bit (msb) index
         while(len(ResultPolynomial) != len(ReducingPolynomial_Temp)):
-            ReducingPolynomial_Temp = ReducingPolynomial_Temp + "0"
+            ReducingPolynomial_Temp = ReducingPolynomial_Temp << 1
 
         print("\nThe temporary reducing polynomial is: \n", ReducingPolynomial_Temp, "\n", hex(int(ReducingPolynomial_Temp, 2)))
 
